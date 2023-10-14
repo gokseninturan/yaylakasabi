@@ -1,0 +1,521 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Herr+Von+Muellerhoff&family=Poppins:wght@300&display=swap');
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+a,
+a:link,
+a:visited{
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+ul,
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+section,
+span,
+p{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+
+.container{
+    max-width: 1670px;
+    margin: 0 auto;
+    padding: 0 15px;
+    
+ 
+}
+
+.header{
+    background-image: url(images/steak2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+header::before{
+    background-color:rgba(0, 0, 0, 0.39);
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.header-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.header-logo{
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 2px;
+    border-bottom: 5px solid whitesmoke;
+    border-radius: 35px;
+    padding-bottom: 5px;
+
+    
+}
+
+ul{
+    display: flex;
+}
+li{
+    margin-left: 70px;
+
+}
+
+a{
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.header-text{
+    position: absolute;
+    top: 42%;
+    left: 44%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+   
+}
+
+h1{
+    font-size: 8.8rem;
+    font-weight: 500;
+    line-height: 0.4;
+    letter-spacing: 6px;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    color: #b9afa5;
+}
+
+.first-letter{
+    font-size: 10.3rem;
+    font-family: 'Herr Von Muellerhoff', cursive;
+
+}
+
+h3{
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #9e968d;
+    font-weight: bold;
+}
+
+.btn-discover{
+    display: block;
+    background-color: #745b37;
+    color: #fff;
+    padding: 10px 15px;
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-discover::after{
+    content: "Keşfet";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #5b2a02 ;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}
+
+.btn-discover:hover::after{
+    top: 0;
+}
+
+/*ABOUT*/
+
+.about{
+    margin-bottom: 150px;
+
+}
+
+.about-title{
+    margin: 60px 0;
+}
+
+.about-title h2{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: #5b2a02;
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+.about-title h2::after{
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #5b2a02;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.about-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.about-img{
+    width: 40%;
+}
+
+.about-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-text{
+    width: 40%;
+}
+
+h4{
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 40px;
+    color: #745b37;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    letter-spacing: 0.5rem;
+    font-weight: 100;
+}
+
+#asteriks{
+    color: #745b37;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.about-text p{
+    font-size: 15px;
+    text-align: center;
+    color: #2c2727;
+}
+
+
+/*Portfolio*/
+
+.portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.portfolio-item{
+    width: 25%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolio-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: #5b2a02;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0.8;
+    color: #fff;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.portfolio-item:hover .overlay{
+    top: 0;
+}
+
+.portfolio-item:hover img{
+    transform: scale(1.07);
+}
+
+/*CONTACT*/
+
+.contact {
+    padding: 10px 0;
+
+}
+
+.contact h2{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: #5b2a02;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.contact h2::after{
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #5b2a02;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.contact-content{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-item{
+    display: flex;
+    align-items: center;
+    flex-basis: 33%;
+    margin-bottom: 100px;
+    flex-direction: column;
+}
+
+.contact-item i{
+    font-size: 35px;
+    margin-bottom: 30px;
+    color: #5b2a02;
+}
+
+.contact-item p{
+    font-size: 14px;
+    line-height: 33px;
+}
+
+/*FOOTER*/
+
+.footer h2{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: #5b2a02;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 55px 0;
+}
+
+.footer h2::after{
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #5b2a02;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.footer{
+    background-color: #000;
+}
+
+.footer-copyright{
+    color: #fff;
+    text-align: center;
+    flex-basis: 55%;
+    line-height: 2;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-social i{
+    color: #fff;
+    margin-bottom: 50px;
+    font-size: 25px;
+    padding: 0 55px;
+}
+
+.footer-social:first-child{
+    margin-left: 70px;
+}
+
+.menu-icon{
+    font-size: 70px;
+    color: #fff;
+    display: none;
+    margin-left: 20px;
+
+}
+
+/* menu */
+@media only screen and (max-width:800px) {
+    .header-menu ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 0px;
+        background-color: #4e2503a6;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height;
+        
+    }
+    .header-menu ul li{
+        margin-right: 50px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+
+    }
+    .header-menu ul li a{
+        color: #fff;
+    }
+    .header-menu #menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+    
+    .contact-content{
+        flex-direction: column;
+    }
+    .contact-item{
+        margin-top: 30px;
+    }
+    .contact-item p{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+/* about */
+
+
+@media only screen and (max-width:1143px){
+    .about-img{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .about-text{
+        width: 80%;
+    }
+}
+
+/* portfolio */
+@media only screen and (max-width:1000px){
+    .portfolio .portfolio-item{
+        flex-basis: 50%;
+    }
+    h1{
+        font-size: 5.4rem;
+    }
+
+}
+
+@media only screen and (max-width:650px){
+    .portfolio .portfolio-item{
+        flex-basis: 100%;
+    }
+
+    h1{
+        font-size: 5.4rem;
+    }
+
+}
+
+@media only screen and (max-width:1440px){
+    h1{
+        font-size: 7.1rem;
+    }
+}
+
+@media only screen and (max-width:1220px){
+    h1{
+        font-size: 6.1rem;
+    }
+
+    .first-letter{
+        font-size: 9.1rem;
+    }
+    .header-text{
+        top: 43%;
+    }
+}
+
+
+@media only screen and (max-width:900px){
+    h1{
+        font-size: 5.8rem;
+    }
+
+    .first-letter{
+        font-size: 8.5rem;
+    }
+    .header-text{
+        top: 43%;
+        left: 19%;
+    }
+}
+
+@media only screen and (max-width:650px){
+    h1{
+        font-size: 5.1rem;
+    }
+
+    .first-letter{
+        font-size: 8.1rem;
+    }
+    .header-text{
+        top: 43%;
+        left: 10%;
+    }
+}
