@@ -524,10 +524,30 @@ h4{
     }
     .header-text{
         top: 43%;
-        left: 10%;
+        left: 19%;
     }
 
     .header-logo{
         font-size: 10px;
+    }
+}
+
+@media only screen and (max-width:475px){
+
+    .first-letter{
+        font-size: 6.5rem;
+    }
+
+    .header-text{
+        top: 43%;
+        left: 9%;
+    }
+
+    h1{
+        font-size: 3.5rem;
+    }
+
+    .header-logo{
+        font-size: 8px;
     }
 }
